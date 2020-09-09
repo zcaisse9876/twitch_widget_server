@@ -25,6 +25,7 @@ export default {
   },
   mounted () {
     // Init watcher to remove comments if they become too old
+    console.log('hello!');
     interval = setInterval(() => {
       this.clearMessage();
     }, 1000);
@@ -39,6 +40,7 @@ export default {
 
     // listen to messages coming into chat
     socket.on('message', (data) => {
+      console.log(data);
       data.ttl = this.getEpoch();
       this.appendMessage(data);
     });

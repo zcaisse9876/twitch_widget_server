@@ -1,5 +1,7 @@
 'use strict'
 module.exports = {
   NODE_ENV: '"production"',
-  SERVER: '"http://localhost:8081"'
+  SERVER: '"http://www.justservicestho.com"',
+  PORT: '8080',
+  HOST: '165.227.204.214'
 }

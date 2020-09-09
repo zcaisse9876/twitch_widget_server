@@ -4,5 +4,7 @@ const prodEnv = require('./prod.env')
 
 module.exports = merge(prodEnv, {
   NODE_ENV: '"development"',
-  SERVER: '"http://localhost:8081"'
+  SERVER: '"http://www.justservicestho.com"',
+  PORT: '8080',
+  HOST: '"165.227.204.214"',
 })
